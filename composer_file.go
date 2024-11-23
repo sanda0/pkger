@@ -9,7 +9,7 @@ import (
 
 func createComposerJsonFile(f folderSelectForm) {
 	content := `{
-		"name": "{{lowerCaseTest .Config.Namespace}}/{{lowerCasePkgName .Config.Prefix .PkgName}}",
+		"name": "{{lowerCaseText .Config.Namespace}}/{{lowerCasePkgName .Config.Prefix .PkgName}}",
 		"type": "project",
 		"license": "MIT",
 		"autoload": {

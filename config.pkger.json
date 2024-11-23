@@ -1,0 +1,5 @@
+{
+	"package_root": "packages/pkger",
+	"prefix": "X",
+	"namespace": "Pkger"
+}

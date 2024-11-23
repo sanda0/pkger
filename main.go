@@ -24,12 +24,13 @@ func main() {
 		Run: func(cmd *cobra.Command, args []string) {
 			pkgName, _ := cmd.Flags().GetString("package-name")
 			authorName, _ := cmd.Flags().GetString("author-name")
-			authorEmail, _ := cmd.Flags().GetString("autor-email")
+			authorEmail, _ := cmd.Flags().GetString("author-email")
 			param := NewPkgFlags{
 				AuthorName:  authorName,
 				AuthorEmail: authorEmail,
 				PkgName:     pkgName,
 			}
+
 			newPkgForm(param)
 		},
 	}
